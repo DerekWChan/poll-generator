@@ -1,17 +1,27 @@
-Poll Generator v1.3 
+POLL GENERATOR V1.3
 
-Features: 
+<b>Features</b>:
+<br> 
 Custom Name Input
-Custom Choices Input 
+<br>
+Custom Choices Input
+<br> 
 Generate Poll Button
-Clear Fields Button 
+<br>
+Clear Fields Button
+<br> 
 
-In-Development: 
-CSS Styling 
-Upload File Button
-Hide Results Option
-Page Generator
+<b>In-Development</b>:
+<br>
+Upload File Button 
+<br>
+Hide Results Option 
+<br>
+Page Generator 
+<br>
 View Results
 
-Stretch Goals / Late Game (lol?):
-Result Data Visualization
+<b>Stretch Goals / Late Game:</b> 
+<br>
+Result Data Visualization 
+<br>

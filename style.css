@@ -1,0 +1,16 @@
+#pollNameInput {
+    width: 270px;
+}
+#pollChoiceInput {
+    height: 80px;
+    width: 260px;
+}
+#uploadFilePath {
+    width: 210px;
+}
+#pollGeneratorMenu {
+    text-align: center;
+}
+#testArea {
+    text-align: center;
+}

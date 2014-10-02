@@ -11,9 +11,7 @@ Generate Poll Button
 Clear Fields Button
 <br> 
 
-<b>In-Development</b>: 
-<br>
-CSS Styling  
+<b>In-Development</b>:
 <br>
 Upload File Button 
 <br>

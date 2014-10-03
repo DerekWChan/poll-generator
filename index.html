@@ -4,23 +4,27 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
     </head>
     <body>        
-        <center>Poll Generator v1.3</center>
+        <center>
+            <h1>Poll Generator v1.3</h1>
+
+        </center>
         <div id="pollGeneratorMenu">
-            <input id="pollNameInput" type="text" placeholder="Name"></input>
+            <input id="pollNameInput" name="name" type="text" placeholder=" Name">
             <br>
-            <textarea id="pollChoiceInput" placeholder="Enter choices here..."></textarea>
+            <textarea id="pollChoiceInput" name="choices" placeholder=" Enter choices here..."></textarea>
             <br>
-            <input id="uploadFilePath" type="text" placeholder="Choose File..."></input>
-            <input id="browseFile" type="submit" value="Browse"></input>
+            <input id="uploadFilePath" name="uploadFilePath" type="text" placeholder=" Choose File...">
+            <input id="browseFile" type="submit" value="Browse">
+            <br>    
+            <div id="hideResults">
+                <input id="hideResultsCheckbox" type="checkbox">Hide Results until
+                <input id="hideResultsTime" type="date">
+            </div>
             <br>
-            <input id="hideResults" type="checkbox"></input>Hide Results until
-            <input id="hideResultsTime" type="date"></input>
-            <br>
-            <input id="generatePoll" type="submit" value="Generate Poll"></input>
-            <input id="clearFields" type="submit" value="Clear Fields"></input>
+            <input id="generatePoll" type="submit" value="Generate Poll">
+            <input id="clearFields" type="submit" value="Clear Fields">
         </div>
         <br>
-            
         <div id="testArea"></div>
     </body>
 </html>

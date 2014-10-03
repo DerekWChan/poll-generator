@@ -3,19 +3,34 @@ body {
     color: #EEEEEE;
     font-family: Calibri;
 }
-
-#pollNameInput {
-    width: 270px;
+h1 {
+    font-size: 30px;
 }
-#pollChoiceInput {
-    height: 80px;
-    width: 260px;
-}
-#uploadFilePath {
-    width: 210px;
+input, textarea, select {
+    background-color: #EEEEEE;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    color: #333333;
+    font-family: Calibri;
+    font-size: 13px;
 }
 #pollGeneratorMenu {
     text-align: center;
+    font-size: 13px;
+}
+#pollNameInput {
+    width: 240px;
+}
+#pollName {
+    font-size: 15px;
+}
+#pollChoiceInput {
+    height: 80px;
+    width: 240px;
+}
+#uploadFilePath {
+    width: 185px;
 }
 #testArea {
     text-align: center;

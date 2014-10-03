@@ -6,6 +6,10 @@ $(document).ready(function () {
         var pollName = $("#pollNameInput").val();
         var pollChoices = $("#pollChoiceInput").val().split('\n');
         
+        if (pollName == "" || pollChoices == "") {
+            return;
+        }
+        else {
             if (pollExists) {
                 $("#testPoll").remove();
                 pollExists = false;
@@ -17,7 +21,8 @@ $(document).ready(function () {
                 $("#pollChoices").append("<option>" + pollChoices[choice] + "</option>");
             }
             $("#testPoll").append("<input id=\"answerButton\" type=\"submit\" value=\"Answer\">");
-            pollExists = true;        
+            pollExists = true;  
+        }
     });
 
     // Clear Fields Button
@@ -27,9 +32,9 @@ $(document).ready(function () {
     });
 
     // Answer Button
-    $("#answerButton").click(function() {
+    $("#answerButton").submit(function() {
         alert("Hello World");
-        //var selectedAnswer = $("#pollChoices").options[pollChoices.selectedIndex].text;
-        //$("#testArea").append(selectedAnswer);
+        var selectedAnswer = $("#pollChoices").options[pollChoices.selectedIndex].text;
+        $("#testArea").append(selectedAnswer);
     });
 });

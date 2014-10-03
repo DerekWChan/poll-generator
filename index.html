@@ -3,29 +3,28 @@
     <head>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
     </head>
-    <body>        
+    <body>
         <center>
             <h1>Poll Generator v1.3</h1>
-
         </center>
-        <div id="pollGeneratorMenu">
-            <input id="pollNameInput" name="name" type="text" placeholder=" Name">
+            <form id="pollGeneratorMenu" method="POST">
+                <input required id="pollNameInput" name="name" type="text" placeholder=" Name">
+                <br>
+                <textarea required id="pollChoiceInput" name="choices" placeholder=" Enter choices here..."></textarea>
+                <br>
+                <input id="uploadFilePath" name="uploadFilePath" type="text" placeholder=" Choose File..."> 
+                <input id="browseFile" type="submit" value="Browse">
+                <br>    
+                <div id="hideResults">
+                    <input id="hideResultsCheckbox" type="checkbox">Hide Results until
+                    <input id="hideResultsTime" type="date">
+                </div>
+                <br>
+                <input id="generatePoll" type="submit" value="Generate Poll">
+                <input id="clearFields" type="submit" value="Clear Fields">
+            </form>
             <br>
-            <textarea id="pollChoiceInput" name="choices" placeholder=" Enter choices here..."></textarea>
-            <br>
-            <input id="uploadFilePath" name="uploadFilePath" type="text" placeholder=" Choose File...">
-            <input id="browseFile" type="submit" value="Browse">
-            <br>    
-            <div id="hideResults">
-                <input id="hideResultsCheckbox" type="checkbox">Hide Results until
-                <input id="hideResultsTime" type="date">
-            </div>
-            <br>
-            <input id="generatePoll" type="submit" value="Generate Poll">
-            <input id="clearFields" type="submit" value="Clear Fields">
-        </div>
-        <br>
-        <div id="testArea"></div>
+            <div id="testArea"></div>
     </body>
 </html>
 
